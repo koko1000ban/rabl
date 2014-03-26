@@ -7,7 +7,7 @@ rvm:
   - jruby-head
 gemfile: Gemfile.ci
 env:
-   - JRUBY_OPTS="--1.9"
+   - JRUBY_OPTS="--1.9 -Xcext.enabled=true"
 matrix:
   allow_failures:
     - rvm: 1.8.7
